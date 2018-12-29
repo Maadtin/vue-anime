@@ -17,8 +17,6 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 
-Route::group(['middleware' => 'cors'], function () {
-	Route::post('/login', 'AuthController@login');
-	Route::post('/register', 'AuthController@register');
-});
+Route::post('/login', 'AuthController@login');
+Route::post('/register', 'AuthController@register');
 

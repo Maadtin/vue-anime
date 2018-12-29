@@ -2,43 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ff265f5-9e15-43c9-b090-a2240d2912ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Console/Commands/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Console/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Events/Event.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Events/ExampleEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Exceptions/Handler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Http/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Http/Controllers/ExampleController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Http/Middleware/Authenticate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Http/Middleware/ExampleMiddleware.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Jobs/ExampleJob.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Jobs/Job.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Listeners/ExampleListener.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Providers/AppServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Providers/AuthServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/Providers/EventServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/artisan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/bootstrap/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/database/factories/ModelFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/database/migrations/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/database/migrations/2018_12_20_012326_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/database/seeds/DatabaseSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/resources/views/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/storage/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/storage/framework/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/storage/framework/views/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/storage/logs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/tests/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-anime-server/tests/TestCase.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/resources/lang/es/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Registro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Registro.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app/Http/Middleware/Cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/Http/Middleware/Cors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,28 +29,76 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/client/src/components/Registro.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="-491">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/api.php">
+        <entry file="file://$PROJECT_DIR$/server/app/Http/Kernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="-1297">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/app/Http/Middleware/Cors.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/.env">
+        <entry file="file://$PROJECT_DIR$/server/app/Http/Controllers/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="182">
+              <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/resources/lang/es/validation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="140" column="49" selection-start-line="140" selection-start-column="49" selection-end-line="140" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/bootstrap/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-858" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -89,6 +111,14 @@
         <option value="Vue Single File Component" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>required</find>
+      <find>message</find>
+      <find>The given data</find>
+      <find>was invalid</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,6 +137,13 @@
         <option value="$PROJECT_DIR$/vue-anime-server/database/migrations/2018_12_20_012326_create_users_table.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server/.env" />
+        <option value="$PROJECT_DIR$/server/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/server/routes/api.php" />
+        <option value="$PROJECT_DIR$/server/app/Http/Middleware/Cors.php" />
+        <option value="$PROJECT_DIR$/server/config/app.php" />
+        <option value="$PROJECT_DIR$/server/resources/lang/es/validation.php" />
+        <option value="$PROJECT_DIR$/client/src/components/Registro.vue" />
+        <option value="$PROJECT_DIR$/server/app/Http/Controllers/AuthController.php" />
       </list>
     </option>
   </component>
@@ -223,7 +260,7 @@
               <item name="vue-anime" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-anime" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,6 +275,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -265,18 +303,20 @@
       <workItem from="1545265031774" duration="644000" />
       <workItem from="1545265694562" duration="792000" />
       <workItem from="1545267073657" duration="252000" />
-      <workItem from="1545863789381" duration="1210000" />
+      <workItem from="1545863789381" duration="1567000" />
+      <workItem from="1546041195197" duration="1528000" />
+      <workItem from="1546043807230" duration="4292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6023000" />
+    <option name="totallyTimeSpent" value="12200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2033557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20872483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -288,9 +328,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32794118" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.32794118" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.32794118" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -309,96 +349,23 @@
     <entry file="file://$PROJECT_DIR$/src/App.vue" />
     <entry file="file://$PROJECT_DIR$/src/components/Login.vue" />
     <entry file="file://$PROJECT_DIR$/src/components/Header.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/database/factories/ModelFactory.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Http/Controllers/ExampleController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Http/Middleware/Authenticate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Jobs/ExampleJob.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Jobs/Job.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Listeners/ExampleListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/User.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/public/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/public/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-337" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/bootstrap/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/database/migrations/2018_12_20_012326_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-anime-server/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/database/factories/ModelFactory.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Http/Controllers/Controller.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Http/Controllers/ExampleController.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Http/Middleware/Authenticate.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Jobs/ExampleJob.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/routes/web.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Jobs/Job.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/Listeners/ExampleListener.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/app/User.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/database/seeds/DatabaseSeeder.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/public/index.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/public/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/bootstrap/app.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/database/migrations/2018_12_20_012326_create_users_table.php" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/.env" />
+    <entry file="file://$PROJECT_DIR$/vue-anime-server/.env.example" />
     <entry file="file://$PROJECT_DIR$/server/routes/console.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-253" />
@@ -410,17 +377,109 @@
     <entry file="file://$PROJECT_DIR$/server/routes/channels.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/server/app/Console/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="-234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/factories/UserFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="234">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/resources/lang/en/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="140" column="50" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/bootstrap/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-858" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/resources/lang/es/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="140" column="49" selection-start-line="140" selection-start-column="49" selection-end-line="140" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/Http/Middleware/Cors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1297">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Registro.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-491">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/Http/Controllers/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
         </state>
       </provider>
     </entry>

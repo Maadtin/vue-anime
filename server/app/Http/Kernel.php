@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Http;
-
-use App\Http\Middleware\CorsMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -61,8 +59,7 @@ class Kernel extends HttpKernel
 		 'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
 		 'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
 		 'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-		 'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-		 'cors' => \App\Http\Middleware\Cors::class
+		 'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class
 	];
 
 	/**
