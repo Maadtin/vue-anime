@@ -1,37 +1,69 @@
 <template>
 
-	<div>
-		<pre>
-		{{ errors }}
-	</pre>
-		<form class="register-form" @submit.prevent="register">
-			<v-layout row wrap>
-				<v-flex xs12>
-					<v-text-field label="Avatar" prepend-icon='attach_file'></v-text-field>
-				</v-flex>
-				<v-flex xs6>
-					<v-text-field v-model="username" label="Nombre de usuario"></v-text-field>
-				</v-flex>
-				<v-flex xs6>
-					<v-text-field type="text" v-model="email" label="Email"></v-text-field>
-				</v-flex>
-				<v-flex xs12>
-					<v-text-field type="password" v-model="password" label="Contraseña"></v-text-field>
-				</v-flex>
-				<v-flex xs12>
-					<v-text-field type="password" v-model="confirmPassword" label="Confirmar contraseña"></v-text-field>
-				</v-flex>
 
-				<v-flex xs12>
-					<v-btn type="submit" color="indigo anime-button">Registrar</v-btn>
-				</v-flex>
-
-			</v-layout>
-		</form>
-	</div>
+	<form class="register-form" @submit.prevent="register">
+		<v-layout row wrap>
 
 
+			<v-flex xs12>
+				<v-text-field label="Avatar" @click="pickFile" prepend-icon='attach_file'></v-text-field>
+				<span class="message error-message" v-if="previewPictureError">
+							{{ previewPictureError }}
+				</span>
+				<input @change="onFilePick" type="file" style="display: none" ref="image"/>
+				<v-flex>
+					<v-img xs6 width="100" :src="previewPicture" v-if="previewPicture" alt="Avatar de usuario"
+							 class="card-img"/>
+				</v-flex>
+			</v-flex>
+			<v-flex xs6>
+				<v-text-field v-model="username" label="Nombre de usuario"></v-text-field>
+				<div v-if="errors.username && errors.username.length" class="messages-container">
+						<span class="message error-message" v-for="error in errors.username">
+							{{ error }}
+						</span>
+				</div>
+			</v-flex>
+			<v-flex xs6>
+				<v-text-field type="text" v-model="email" label="Email"></v-text-field>
+					<div v-if="errors.email && errors.email.length" class="messages-container">
+						<span class="message error-message" v-for="error in errors.email">
+							{{ error }}
+						</span>
+					</div>
+			</v-flex>
+			<v-flex xs12>
+				<v-text-field type="password" v-model="password" label="Contraseña"></v-text-field>
+				<div v-if="errors.password && errors.password.length" class="messages-container">
+						<span class="message error-message" v-for="error in errors.password">
+							{{ error }}
+						</span>
+				</div>
+			</v-flex>
+			<v-flex xs12>
+				<v-text-field type="password" v-model="confirmPassword" label="Confirmar contraseña"></v-text-field>
+				<div v-if="errors.confirmPassword && errors.confirmPassword.length" class="messages-container">
+						<span class="message error-message" v-for="error in errors.confirmPassword">
+							{{ error }}
+						</span>
+				</div>
+			</v-flex>
 
+			<v-flex xs12>
+				<v-btn :loading="buttonLoading" :disabled="buttonLoading" type="submit" color="indigo anime-button">
+					Registrar
+				</v-btn>
+				<v-alert
+						  :value="alert.showing"
+						  :type="alert.type"
+						  :color="alert.type === 'info' ? 'indigo' : ''"
+				>
+					{{ alert.message }}
+				</v-alert>
+			</v-flex>
+
+		</v-layout>
+	</form>
 
 
 </template>
@@ -43,22 +75,61 @@
 	export default {
 		name: "Registro",
 		data: () => ({
+			alert: {
+				showing: false,
+				type: 'info',
+				message: ''
+			},
 			errors: {},
 			username: '',
 			email: '',
 			password: '',
 			confirmPassword: '',
-			picture: ''
+			picture: '',
+			previewPicture: '',
+			previewPictureError: '',
+			buttonLoading: false
 		}),
 		methods: {
+			onFilePick(event) {
+				let file = event.target.files[0];
+				this.previewPictureError = '';
+				if (file) {
+					if (!file.type.includes('image')) {
+						this.previewPictureError = 'Solo imagenes permitidas'
+					} else {
+						let reader = new FileReader();
+						reader.onload = e => {
+							this.previewPicture = e.target.result;
+						};
+						reader.readAsDataURL(file);
+					}
+				}
+			},
+			pickFile() {
+				this.$refs.image.click();
+			},
 			register() {
+				this.buttonLoading = true;
 				axios.post(`http://localhost:8000/api/register`, this.$data)
 					 .then(response => {
-					 	console.log(response.data);
+						 this.errors = {};
+						 this.buttonLoading = false;
+
+						 this.alert.showing = true;
+						 if (response.data.message) {
+						 	this.alert.message = response.data.message;
+						 } else {
+						 	this.alert.message = response.data.error;
+						 	this.alert.type = 'error';
+						 }
+
 					 })
 					 .catch(error => {
-					 	let { errors } = error.response.data;
-					 	this.errors = errors;
+						 this.errors = {};
+						 this.buttonLoading = false;
+						 let {errors} = error.response.data;
+						 this.errors = errors;
 					 })
 			}
 		}

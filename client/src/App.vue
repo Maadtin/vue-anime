@@ -30,6 +30,13 @@ export default {
 
 <style>
 
+  .message {
+    font-size: 13px;
+  }
+  .error-message {
+    color: crimson;
+  }
+
   .anime-button {
     color: #fff !important;
     margin-left: 0;
