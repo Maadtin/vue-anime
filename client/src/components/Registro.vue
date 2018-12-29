@@ -10,14 +10,14 @@
 				<span class="message error-message" v-if="previewPictureError">
 							{{ previewPictureError }}
 				</span>
-				<input @change="onFilePick" type="file" style="display: none" ref="image"/>
+				<input @change="onFilePick" name="avatar" type="file" style="display: none" ref="image"/>
 				<v-flex>
 					<v-img xs6 width="100" :src="previewPicture" v-if="previewPicture" alt="Avatar de usuario"
 							 class="card-img"/>
 				</v-flex>
 			</v-flex>
 			<v-flex xs6>
-				<v-text-field v-model="username" label="Nombre de usuario"></v-text-field>
+				<v-text-field name="username" label="Nombre de usuario"></v-text-field>
 				<div v-if="errors.username && errors.username.length" class="messages-container">
 						<span class="message error-message" v-for="error in errors.username">
 							{{ error }}
@@ -25,15 +25,15 @@
 				</div>
 			</v-flex>
 			<v-flex xs6>
-				<v-text-field type="text" v-model="email" label="Email"></v-text-field>
-					<div v-if="errors.email && errors.email.length" class="messages-container">
+				<v-text-field type="text" name="email" label="Email"></v-text-field>
+				<div v-if="errors.email && errors.email.length" class="messages-container">
 						<span class="message error-message" v-for="error in errors.email">
 							{{ error }}
 						</span>
-					</div>
+				</div>
 			</v-flex>
 			<v-flex xs12>
-				<v-text-field type="password" v-model="password" label="Contraseña"></v-text-field>
+				<v-text-field type="password" name="password" label="Contraseña"></v-text-field>
 				<div v-if="errors.password && errors.password.length" class="messages-container">
 						<span class="message error-message" v-for="error in errors.password">
 							{{ error }}
@@ -41,7 +41,7 @@
 				</div>
 			</v-flex>
 			<v-flex xs12>
-				<v-text-field type="password" v-model="confirmPassword" label="Confirmar contraseña"></v-text-field>
+				<v-text-field type="password" name="confirmPassword" label="Confirmar contraseña"></v-text-field>
 				<div v-if="errors.confirmPassword && errors.confirmPassword.length" class="messages-container">
 						<span class="message error-message" v-for="error in errors.confirmPassword">
 							{{ error }}
@@ -81,10 +81,6 @@
 				message: ''
 			},
 			errors: {},
-			username: '',
-			email: '',
-			password: '',
-			confirmPassword: '',
 			picture: '',
 			previewPicture: '',
 			previewPictureError: '',
@@ -109,24 +105,21 @@
 			pickFile() {
 				this.$refs.image.click();
 			},
-			register() {
+			register(event) {
+				this.errors = {};
 				this.buttonLoading = true;
-				axios.post(`http://localhost:8000/api/register`, this.$data)
+				axios.post(`http://localhost:8000/api/register`, new FormData(event.target))
 					 .then(response => {
-						 this.errors = {};
 						 this.buttonLoading = false;
-
 						 this.alert.showing = true;
 						 if (response.data.message) {
-						 	this.alert.message = response.data.message;
+							 this.alert.message = response.data.message;
 						 } else {
-						 	this.alert.message = response.data.error;
-						 	this.alert.type = 'error';
+							 this.alert.message = response.data.error;
+							 this.alert.type = 'error';
 						 }
-
 					 })
 					 .catch(error => {
-						 this.errors = {};
 						 this.buttonLoading = false;
 						 let {errors} = error.response.data;
 						 this.errors = errors;

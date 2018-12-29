@@ -18,32 +18,35 @@ class AuthController extends Controller
 	{
 
 
-		$validation = [
-			 'email' => 'required|email',
-			 'password' => 'required|alpha_num|min:8',
-			 'confirmPassword' => 'required|alpha_num|min:8|same:password',
-			 'picture' => '',
-			 'username' => 'required|min:5'
-		];
+//		$validation = [
+//			 'email' => 'required|email',
+//			 'password' => 'required|alpha_num|min:8',
+//			 'confirmPassword' => 'required|alpha_num|min:8|same:password',
+//			 'avatar' => '',
+//			 'username' => 'required|min:5'
+//		];
+//
+//		$validationMessages = [
+//			 'password.required' => 'El campo contraseña es requerido',
+//			 'confirmPassword.required' => 'El campo confirmar contraseña es requerido',
+//			 'username.required' => 'El campo nombre de usuario contraseña es requerido',
+//		];
+//
+//		$validatedData = $request->validate($validation, $validationMessages);
+//
+//		$user = new User();
+//		$user->username = $request->username;
+//		$user->password = $request->password;
+//		$user->email = $request->email;
 
-		$validationMessages = [
-			 'password.required' => 'El campo contraseña es requerido',
-			 'confirmPassword.required' => 'El campo confirmar contraseña es requerido',
-			 'username.required' => 'El campo nombre de usuario contraseña es requerido',
-		];
+		return response()->json(['file' => $request->file('avatar')]);
 
-		$validatedData = $request->validate($validation, $validationMessages);
-
-		$user = new User();
-		$user->username = $request->username;
-		$user->password = $request->password;
-		$user->email = $request->email;
 //		$user->username = $request->username;
 
-		if ($user->save()) {
-			return response()->json(['message' => 'Te has registrado correctamente.'], 201);
-		}
-		return response()->json(['error' => 'Ocurrio un error durante el registro, por favor inténtalo más tarde.'], 201);
+//		if ($user->save()) {
+//			return response()->json(['message' => 'Te has registrado correctamente.'], 201);
+//		}
+//		return response()->json(['error' => 'Ocurrio un error durante el registro, por favor inténtalo más tarde.'], 201);
 	}
 
 
