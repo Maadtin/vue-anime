@@ -1,16 +1,21 @@
 <template>
 
 
-	<form class="register-form" @submit.prevent="register">
+	<form class="register-form" @submit.prevent="register" enctype="multipart/form-data">
 		<v-layout row wrap>
 
 
 			<v-flex xs12>
 				<v-text-field label="Avatar" @click="pickFile" prepend-icon='attach_file'></v-text-field>
+				<div v-if="errors.avatar && errors.avatar.length" class="messages-container">
+						<span class="message error-message" v-for="error in errors.avatar">
+							{{ error }}
+						</span>
+				</div>
 				<span class="message error-message" v-if="previewPictureError">
 							{{ previewPictureError }}
 				</span>
-				<input @change="onFilePick" name="avatar" type="file" style="display: none" ref="image"/>
+				<input @change="onFilePick" name="avatar" type="file" accept="image/*" style="display: none" ref="image"/>
 				<v-flex>
 					<v-img xs6 width="100" :src="previewPicture" v-if="previewPicture" alt="Avatar de usuario"
 							 class="card-img"/>
