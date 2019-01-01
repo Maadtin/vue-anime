@@ -11,8 +11,12 @@
 			</v-flex>
 
 			<v-flex xs12>
-				<v-btn type="submit" color="indigo anime-button">Entrar</v-btn>
+				<v-btn :loading="loading" type="submit" color="indigo anime-button">Entrar</v-btn>
 			</v-flex>
+
+			<span v-if="error" style="width: 100%" class="message error-message">
+					{{ error }}
+			</span>
 
 		</v-layout>
 	</form>
@@ -24,10 +28,23 @@
 
 	export default {
 		name: "Registro",
+		data: () => ({
+			error: '',
+			loading: false
+		}),
 		methods: {
 			login(event) {
+				this.loading = true;
 				// pasamos el form
-				this.$store.dispatch('getToken', event.target);
+				this.$store.dispatch('getToken', event.target)
+					 .then(result => {
+						 this.$router.push({name: 'home'});
+						 this.loading = false;
+					 })
+					 .catch(error => {
+						 this.loading = false;
+						 this.error = error.message;
+					 })
 			}
 		}
 	}

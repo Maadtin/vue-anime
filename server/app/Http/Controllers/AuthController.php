@@ -27,7 +27,7 @@ class AuthController extends Controller
 				 'form_params' => [
 					  'grant_type' => 'password',
 					  'client_id' => 2,
-					  'client_secret' => 'ItxbpYkCFk7AXWaTIcWow1IRSgwoXtu1XSqV7aBt',
+					  'client_secret' => 'cT6bDS7kXMuDvT24HkQ5qApvgQpZoZ2iAaaWHMW1',
 					  'username' => $request->email,
 					  'password' => $request->password
 				 ]
@@ -38,13 +38,23 @@ class AuthController extends Controller
 		} catch (BadResponseException $e) {
 			switch ($e->getCode()) {
 				case 400:
-					return response()->json(['message' => 'Petición inválida, Por favor introduce el email y la contraseña']);
+					return response()->json(['message' => 'Rellena todos los campos']);
 				case 401:
 					return response()->json(['message' => 'Contraseña o email inválido']);
 			}
 			return response()->json(['message' => 'Ocurrio un error fatal en el servidor']);
 		}
 
+	}
+
+
+	public function logout () {
+		auth()->user()->tokens->each(function ($token) {
+			$token->delete();
+		});
+		return response()->json([
+			 'message' => 'Deslogeado correctamente'
+		], 200);
 	}
 
 	public function register(Request $request)

@@ -10,20 +10,36 @@
 
 		<v-spacer></v-spacer>
 
-		<v-btn active-class="darken-4" :to="{name: 'registro'}" color="indigo" class="anime-button">
-			Registro
-		</v-btn>
-		<v-btn active-class="darken-4" :to="{name: 'login'}" color="indigo" class="anime-button">
-			Login
-		</v-btn>
+
+
+
+		<div v-if="!loggedIn" class="auth-buttons">
+			<v-btn active-class="darken-4" :to="{name: 'registro'}" color="indigo" class="anime-button">
+				Registro
+			</v-btn>
+			<v-btn active-class="darken-4" :to="{name: 'login'}" color="indigo" class="anime-button">
+				Login
+			</v-btn>
+		</div>
+
+		<div v-else class="logged-data">
+			<AvatarWidget></AvatarWidget>
+		</div>
 
 	</v-toolbar>
 	
 </template>
 
 <script>
+	import AvatarWidget from "./AvatarWidget";
 	export default {
-		name: "Header"
+		name: "Header",
+		components: {AvatarWidget},
+		computed: {
+			loggedIn () {
+				return this.$store.getters.loggedIn;
+			}
+		}
 	}
 </script>
 

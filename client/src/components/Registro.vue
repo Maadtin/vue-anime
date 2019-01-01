@@ -113,12 +113,13 @@
 			register(event) {
 				this.errors = {};
 				this.buttonLoading = true;
-				axios.post(`http://localhost:8000/api/register`, new FormData(event.target))
+				axios.post(`http://vue-anime.test/api/register`, new FormData(event.target))
 					 .then(response => {
 						 this.buttonLoading = false;
 						 this.alert.showing = true;
 						 if (response.data.message) {
-							 this.alert.message = response.data.message;
+							 // this.alert.message = response.data.message;
+							 this.$router.push({name: 'login'})
 						 } else {
 							 this.alert.message = response.data.error;
 							 this.alert.type = 'error';
